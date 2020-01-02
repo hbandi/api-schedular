@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "id": "customer-alpha",
+      "context": "alpha",
+      "schedule": "0 0/1 * * * *",
+      "endPoint": "http://localhost:8090/alpha/call",
+      "successCallBackEndPoint": "http://localhost:8090/alpha/success",
+      "failureCallBackEndPoint": "http://localhost:8090/alpha/failure"
+    },
+    {
+      "id": "customer-beta",
+      "context": "beta",
+      "schedule": "0 0/1 * * * *",
+      "endPoint": "http://localhost:8090/beta/call",
+      "successCallBackEndPoint": "http://localhost:8090/beta/success",
+      "failureCallBackEndPoint": "http://localhost:8090/beta/failure"
+    }
+  ]
+}
